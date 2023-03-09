@@ -1,0 +1,14 @@
+{
+  "name": "poo",
+  "version": "1.0.0",
+  "description": "poo",
+  "main": "poo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EdwinRA",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

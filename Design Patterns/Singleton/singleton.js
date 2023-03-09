@@ -20,14 +20,14 @@ let bd1 = BaseDeDatos.getInstance("MySQL");
 let bd2 = BaseDeDatos.getInstance("MySQL");
 
 // Comprobar si son el mismo objeto
-console.log(bd1 === bd2); // true
+console.log("MySql & MySql -> " + (bd1 === bd2)); // true
 
 // Crear otro objeto de la clase BaseDeDatos con otro nombre
 let bd3 = BaseDeDatos.getInstance("MongoDB");
 
 // Comprobar si es el mismo objeto que los anteriores
-console.log(bd1 === bd3); // false
+console.log( "MySQL & MongoDB -> " + (bd1 === bd3)); // true
 
 
 //NOTA: Static no puede ser accedido desde otros objetos o intancias,
-//      si no desde la original.
+//      si no desde la classe original.

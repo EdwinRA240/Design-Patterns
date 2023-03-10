@@ -6,7 +6,9 @@ class RealSubject {
 
   // Método request: Simula una operación costosa o sensible
   request() {
-    console.log("Ejecutando la operación para el objeto " + this.name);
+    console.log(
+      "Ejecutando la operación para el objeto " + this.name
+    );
   }
 }
 
@@ -26,7 +28,9 @@ class Proxy {
     }
     // Si no, deniega el acceso y muestra un mensaje
     else {
-      console.log("Acceso denegado al objeto " + this.realSubject.name);
+      console.log(
+        "Acceso denegado al objeto " + this.realSubject.name
+      );
     }
   }
 }
@@ -45,3 +49,5 @@ let realSubject2 = new RealSubject("Objeto2"); // Crea otro objeto real con nomb
 let proxy2 = new Proxy(realSubject2); // Crea otro proxy para ese objeto
 
 proxy2.request(); // Accede al otro objeto por primera vez
+
+console.log(proxy2); // Imprime el proxy y su estructura

@@ -1,3 +1,4 @@
+//Abstraccion
 class Printer {
   constructor(ink, color) {
     this.ink = ink;
@@ -84,10 +85,7 @@ const blue = new Colors("blue");
 //Printer
 const liquidPrinter = new EpsonPrinter(liquidInk, red);
 const tonerPrinter = new EpsonPrinter(tonerInk, blue);
-const enderPrinter = new EnderPrinter(
-  powderInk,
-  blackAndWhite
-);
+const enderPrinter = new EnderPrinter(powderInk, blackAndWhite);
 
 console.log(liquidPrinter.print());
 //output Printer: Epson, Ink: acrylic-based and color is red
